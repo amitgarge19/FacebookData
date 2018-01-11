@@ -1,0 +1,77 @@
+<!--This page will show posts made by user-->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Posts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/Feeds.css">
+    <link rel="icon" href="images/ficon.ico">
+  </head>
+
+  <body data-spy="scroll" data-target="#my-navbar">
+    <!--Navigation bar starts-->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-collapse" id="my-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand"><strong>My Facebook Profile</strong></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-toggle="collapse" data-target=".in" href="Profile.html">My Profile</a></li>
+            <li><a data-toggle="collapse" data-target=".in" href="">Feeds</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navigation bar ends-->
+    <br/>
+    <br/>
+    <br/>
+
+    
+    <div id="result" class="container">
+
+      <!-- Page header -->
+      <div class="page-header">
+        <h2>Posts <small id="head_name">by </small></h2>
+      </div>
+      <!-- /Page header -->
+     
+      <!--The loader-->
+      <div class="loader" id="loader" align="center">
+      </div>
+    
+      <!-- Posts will be displayed here using jquery which is written in the file 'FacebookData.js' -->
+      <div class="posts" id="posts">
+
+        <!-- Line component -->
+        <div class="line text-muted"></div>
+
+        <div id="tm">
+
+        </div>
+      </div>
+      <!-- Posts section ends -->
+
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/34f08b0a1f.js"></script>
+    <script src="js/FacebookData.js"></script> <!--The js file -->
+
+  </body>
+
+</html>

@@ -1,0 +1,111 @@
+<!--This page will show basic information about the Facebook user -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/Profile.css">
+    <link rel="icon" href="images/ficon.ico">
+  </head>
+
+  <body data-spy="scroll" data-target="#my-navbar">
+    <!--Navigation bar starts-->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-collapse" id="my-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand"><strong>My Facebook Profile</strong></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-toggle="collapse" data-target=".in" href="">My Profile</a></li>
+            <li><a data-toggle="collapse" data-target=".in" href="Feeds.html">Feeds</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navigation bar ends-->
+    <br/>
+    <br/>
+    <br/>
+    <!--Panel for user information starts here-->
+    <div class="container" align="center" id="result">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <!--Panel Heading-->
+          <div class="panel panel-primary">
+            <div class="panel-heading" style="color: #FFFFFF;">
+              <h4 style="font-style: bold">User's Facebook Profile</h4></div>
+            <div class="panel-body">
+              <!--Panel Body-->
+              <div class="box box-info">
+
+                <div class="box-body">
+                  <div class="col-sm-6">
+                    <div align="center"> <img alt="" src="#" id="ProfilePicture" class="img-circle img-responsive">
+                    </div>
+                  </div>
+                  <br>
+                  <!-- /input-group -->
+                </div>
+                <div class="col-sm-6">
+                  <h4 style="color:#00b1b1;"><span id="name"></span></h4>
+                </div>
+                <div class="clearfix"></div>
+                <hr style="margin:5px 0 5px 0;">
+
+                <div class="col-sm-5 col-xs-6">Date Of Birth</div>
+                <div class="col-sm-7 col-xs-6"><span id="DOB"></span></div>
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
+
+                <div class="col-sm-5 col-xs-6">Current City</div>
+                <div class="col-sm-7 col-xs-6"><span id="CurrentCity"></span></div>
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
+
+                <div class="col-sm-5 col-xs-6">Work Place</div>
+                <div class="col-sm-7 col-xs-6"><span id="WorkPlace"></span></div>
+
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
+
+                <div class="col-sm-5 col-xs-6">Education</div>
+                <div class="col-sm-7 col-xs-6"><span id="Education"></span></div>
+
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
+
+                <div class="col-sm-5 col-xs-6">Email ID</div>
+                <div class="col-sm-7 col-xs-6"><span id="EmailID"></span></div>
+
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
+
+                <div class="col-sm-5 col-xs-6">Relationship Status</div>
+                <div class="col-sm-7 col-xs-6"><span id="Relationshipstatus"></span></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/FacebookData.js"></script>
+
+  </body>
+
+</html>
